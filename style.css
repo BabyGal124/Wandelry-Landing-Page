@@ -497,10 +497,18 @@ header{
 
 }
 .hero-section , .get-started-section{
-    min-height: 35vh;       
- 
+    min-height: 40vh;      
 }
-
+.hero-section .hero-details .title{
+    font-size: var(--font-size-1);
+}
+.hero-section .hero-details .subtitle{
+    font-size: var(--font-size-s);
+}
+.hero-section .hero-details .button-get-started{
+    padding: 5px 10px;
+    font-size: var(--font-size-s);
+}
 body.show-mobile-menu header::before{
     content:"" ;
     position: fixed;
@@ -616,8 +624,18 @@ grid-column: 1/-1;
 /*Responsive Media Query Code for max width 640px */
 @media screen and (max-width: 640px){
     .hero-section , .get-started-section{
-    min-height: 35vh;       
+    min-height: 40vh;       
 
+}
+    .hero-section .hero-details .title{
+    font-size: var(--font-size-1);
+}
+.hero-section .hero-details .subtitle{
+    font-size: var(--font-size-s);
+}
+.hero-section .hero-details .button-get-started{
+    padding: 5px 10px;
+    font-size: var(--font-size-s);
 }
     .why-wanderly-details{
     display: grid;
@@ -652,3 +670,4 @@ grid-column: 1/-1;
    
 
 }
+
