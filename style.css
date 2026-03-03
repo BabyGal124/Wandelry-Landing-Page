@@ -497,9 +497,8 @@ header{
 
 }
 .hero-section , .get-started-section{
-    min-height: 60vh;       
-  width: 100%;
-  padding: 20px;
+    min-height: 35vh;       
+ 
 }
 
 body.show-mobile-menu header::before{
@@ -615,12 +614,10 @@ grid-column: 1/-1;
     }
 }
 /*Responsive Media Query Code for max width 640px */
-
 @media screen and (max-width: 640px){
     .hero-section , .get-started-section{
-    min-height: 30vh;       
-  width: 100%;
-  padding: 20px;
+    min-height: 35vh;       
+
 }
     .why-wanderly-details{
     display: grid;
@@ -653,4 +650,5 @@ grid-column: 1/-1;
        grid-template-columns: 1fr 1fr;
     }
    
+
 }
