@@ -1,0 +1,656 @@
+/*Importing Goggle Fonts */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+
+}
+:root{
+    /*Colors */
+    --white-color:#ffff;
+    --dark-color:#111827;
+    --secondary-color:#10B981;
+    --darker-green:#059669;
+    --black-color:#000000;
+    --light-white: #D9D9D9;
+    --accent-color:#F9FAFB;
+    --yellow-color:#FBBF24;
+   --primary-color:#F3F4F6;
+
+   /*Font- Family */
+   --font-heading:'Poppins', sans-serif;
+   --font-body:'Inter', sans-serif;
+
+   /* font size*/
+    --font-size-s:0.9rem;
+    --font-size-n:1rem;
+    --font-size-m:1.12rem;
+    --font-size-1:1.5rem;
+    --font-size-x1:2rem;
+    --font-size-xx1:2.3rem;
+
+    /* font weight*/
+    --font-weight-normal:400;
+    --font-weight-medium:500;
+    --font-weight-semibold:600;
+    --font-weight-bold:700;
+
+    /*Border radius*/
+    --border-radius-s:8px;
+    --border-radius-m:30px
+    --boder-radius-circle:50%;
+
+
+    /*site max width */
+    --site-max-width:1300px
+}  
+
+
+/*Styling for the whole site*/
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+button{
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+.section-content{
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 1300px;
+}
+
+/*Header/ Navbar Styling */
+
+header .navbar{
+   display: flex;
+   padding: 20px;
+   align-items: stretch;
+   justify-content: space-between;
+}
+header{
+    background: var(--white-color);
+    width: 100%;
+    position:fixed;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .nav-logo{
+    color: #10B981;
+    font-size: var(--font-size-x1);
+    font-weight: var(--font-weight-bold);
+}
+.navbar .nav-menu{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.navbar .nav-menu .nav-items .nav-link{
+    padding: 20px 25px;
+    color:#111827;
+    font-size:var(--font-size-m);
+    font-family: var(--font-body);
+    align-items: center;
+}
+.navbar .nav-menu .nav-items .nav-link:hover{
+    color:#10B981
+}
+.navbar .nav-menu .nav-items .nav-button{
+    background-color: #10B981;
+    padding: 10px 20px;
+    border-radius: 25px;    
+    color: #ffff;
+    font-size:var(--font-size-m);
+    font-weight: var(--font-weight-bold);
+    align-items: center;
+    
+}
+.navbar .nav-menu .nav-items .nav-button:hover{
+    background-color:var(--darker-green);
+}
+.navbar :where(#menu-close-button, #menu-open-button){
+    display: none;
+}
+
+/*Hero Section Styling*/
+
+.hero-section{
+    position: relative;
+    min-height: 100vh;
+    background-image: url(images/background\ 2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 40%;
+  
+}
+
+.hero-section .hero-details{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color:var(--white-color);       
+    gap: 25px;
+}
+.hero-section .hero-details .title{
+    font-size: var(--font-size-xx1);
+    
+    font-weight: var(--font-weight-bold);
+    font-family: var(--font-heading);
+}
+.hero-section .hero-details .subtitle{
+    font-size: var(--font-size-m);
+    font-family: var(--font-body);
+}
+.hero-section .hero-details .button-get-started{
+    background-color: #10B981;
+    padding: 10px 25px;
+    border-radius: 20px;    
+    color: #ffff;
+    font-size:var(--font-size-m);
+    font-weight: var(--font-weight-bold);
+    font-family: var(--font-body);
+}
+
+.hero-section .hero-details .button-get-started:hover{
+    background-color: var(--darker-green);
+}
+
+/*Why Wanderly Section Styling */
+.why-wanderly{
+    padding:90px 0 30px;
+
+}
+.why-wanderly .why-wanderly-heading{
+     text-align: center;
+    font-size: var(--font-size-x1);
+    font-family: var(--font-heading);
+
+}
+.why-wanderly-details{
+    display: flex;
+    gap: 50px;
+}
+.why-wanderly-info{
+  flex: 1;                    
+  min-width: 250px;          
+  padding:4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;       
+  text-align: center;
+  gap: 1rem;
+}
+.why-wanderly .why-wanderly-details .why-wanderly-info h3{
+    font-size: var(--font-size-m);
+     font-family: var(--font-heading);
+}
+.why-wanderly .why-wanderly-details .why-wanderly-info p{
+    font-size: var(--font-size-n);
+     font-family: var(--font-body);
+}
+.why-wanderly .why-wanderly-details .why-wanderly-info i{
+    font-size: var(--font-size-xx1);
+    color: var(--secondary-color);
+}
+
+
+/*Adeventure Section Styling*/
+.adventure-section{
+    padding: 90px 0 100px;
+    background-color: var(--accent-color);
+}
+.adventure-section .adventure-heading{
+    text-align: center;
+    font-size: var(--font-size-x1);
+     margin-bottom: 80px;
+      font-family: var(--font-heading);
+
+}   
+.adventure-section .adventure-grid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 90px;
+}
+.adventure-section .adventure-grid .adventure-card{
+    display: flex;
+    width: calc(100% / 3 - 90px);
+    flex-direction: column;
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
+    text-align: center;
+   
+}
+.adventure-section .adventure-grid .adventure-card .ad-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 1;
+}
+.adventure-section .adventure-grid .adventure-card .adventure-details{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color:var(--white-color);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    justify-content: flex-end;
+}
+.adventure-section .adventure-card .adventure-details h3{
+    font-size: var(--font-size-m);
+     font-family: var(--font-heading);
+}
+.adventure-section .adventure-card .adventure-details p{
+    font-size: var(--font-size-n);
+     font-family: var(--font-body);
+}
+.adventure-section .adventure-grid .adventure-card .adventure-details:hover{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: 0.3s ease;
+    color:var(--white-color);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/*Testimonal Section Styling */
+.testimonial-section{
+    padding: 90px 0 100px;
+    background: var(--primary-color);
+}
+.testimonial-section .testimonial-grid{
+   display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.testimonial-section .testimonial-grid .testimonial{
+    background: var(--white-color);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+     width: calc(100% / 3 - 50px);
+
+}
+.testimonial-section .testimonial-grid .testimonial .ratings{
+    color:var(--yellow-color);
+    font-size: var(--font-size-n);
+}
+ .testimonial-section .testimonial-heading{
+    text-align: center;
+    font-size: var(--font-size-x1);
+    margin-bottom: 80px;
+    font-family: var(--font-heading);
+}
+ .testimonial-section .testimonial .testimonial-title{
+    font-family: var(--font-heading);
+    font-size: var(--font-size-m);
+ }
+  .testimonial-section .testimonial .testimonial-message{
+    font-family: var(--font-body);
+    font-size: var(--font-size-n);
+ }
+.testimonial-section .testimonial .testimonial-image{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/*Get Started Section Styling */
+
+.get-started-section{
+    position: relative;
+    min-height: 70vh;
+    min-width: 100%;
+    background-image: url(images/4b99ccf3b32fe0f18cf82ad34e32157a.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center ;
+  
+}
+
+.get-started-section .get-started-details{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color:var(--white-color);       
+    gap: 25px;
+}
+.get-started-section .get-started-details .started-title{
+    font-size: var(--font-size-xx1);
+    line-height: 3rem;
+    font-weight: var(--font-weight-bold);
+    font-family: var(--font-heading);
+}
+.get-started-section .get-started-details .started-subtitle{
+    font-size: var(--font-size-m);
+    line-height: 2rem;
+    font-family: var(--font-body);
+}
+.get-started-section .get-started-details .button-get-started{
+    background-color: #10B981;
+    padding: 10px 25px;
+    border-radius: 20px;    
+    color: #ffff;
+    font-size:var(--font-size-m);
+    font-weight: var(--font-weight-bold);
+    font-family: var(--font-body);
+}
+
+.get-started-section .get-started-details .button-get-started:hover{
+    background-color: var(--darker-green);
+}
+
+/*Footer Section  Styling*/
+.footer{
+    background-color: #000000;
+    color: var(--light-white);
+    padding:90px 0 100px; 
+    font-family: var(--font-heading);
+}
+.footer .section-content{
+    display: flex;
+     gap: 48px;
+    align-items: flex-start;
+    justify-content: space-between;
+  
+}
+
+.footer .footer-info .footer-logo, .footer-nav-title , .footer-social , .footer-contact-title{
+    font-size: var(--font-size-1);
+    margin-bottom: 20px;
+}
+ .footer .footer-nav-link .footer-link, .footer-logo-text  {
+    color: var(--light-white);
+    font-size: var(--font-size-m);
+    line-height: 2rem;
+}
+
+
+.footer .footer-socials .social-link { 
+     color: #fff;
+     font-size:var(--font-size-m);
+     margin-right: 1rem;
+    display: inline-block;
+}
+
+.footer .footer-contact p, i{
+    color: var(--white-color);
+     font-size:var(--font-size-m);
+     line-height: 2rem;
+     display: inline-block;
+     margin-right: 5px;
+}
+
+
+
+/*Responsive Media Query Code for max width 1024px */
+@media screen and (max-width: 1024px){
+    .navbar .nav-menu{
+        gap: 10px;
+    }
+    .navbar .nav-menu .nav-items .nav-link{
+    padding: 20px 15px;
+    }
+    .why-wanderly-details{
+        gap: 5px;
+    }
+    .why-wanderly-info{
+        flex: 1;
+        padding: 2rem;
+        display: flex;
+       flex-direction: column;
+       min-width: 150px;
+       text-align: center;
+       align-items: center;
+
+    }
+    
+    .adventure-section .adventure-heading{
+    font-size: var(--font-size-m);
+}
+    .adventure-section .adventure-grid{
+        gap: 50px;
+
+    }
+    .adventure-section .adventure-grid .adventure-card{
+           width: calc(100% / 2 - 50px);
+
+    }
+
+    .adventure-section .adventure-card .adventure-details h3{
+    font-size: var(--font-size-1);
+    }
+    .adventure-section .adventure-card .adventure-details p{
+    font-size: var(--font-size-m);
+    }
+    .testimonial-section .testimonial-grid{
+        gap:40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+      
+    }
+    .testimonial-section .testimonial-grid .testimonial{
+         width: calc(100% / 2 - 40px);
+    }
+    .footer .section-content{
+        gap: 30px;
+    }
+}
+
+/*Responsive Media Query Code for max width 900px */
+
+
+@media screen and (max-width: 900px){
+:root{
+       /* font size*/
+    --font-size-m:1rem;
+    --font-size-1:1.3rem;
+    --font-size-x1:1.5rem;
+    --font-size-xx1:1.8rem;
+
+}
+.hero-section , .get-started-section{
+    min-height: 60vh;       
+  width: 100%;
+  padding: 20px;
+}
+
+body.show-mobile-menu header::before{
+    content:"" ;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(4px);
+    background: rgba(0, 0, 0, 0.2);
+
+
+}
+.navbar :where(#menu-close-button, #menu-open-button){
+    font-size: var(--font-size-xx1);
+    display: block;
+
+}
+ .navbar #menu-close-button{
+        position: absolute;
+        right: 30px;
+        top:30px;
+
+    }
+    body.show-mobile-menu .navbar .nav-menu{
+         left: 0;
+    }
+
+    .navbar .nav-menu{
+    display: block;
+    background-color:var(--white-color);
+    position: fixed;
+    left: -300px;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    display: flex;
+    padding-top: 100px;
+    flex-direction: column;
+    text-align: center;
+  
+
+   
+}
+.navbar .nav-menu  .nav-items .nav-link , .nav-button {
+    color: var(--black-color);
+    font-size: var(--font-size-x1);
+    display: block;
+    margin-top:17px;
+
+}
+.nav-items .nav-button{
+     padding: 15px 20px!important;
+    font-size: var(--font-size-x1) !important;
+}
+
+
+.hero-section .hero-details{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+} 
+.why-wanderly-details{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+
+}
+.why-wanderly-info:nth-child(3) {
+grid-column: 1/-1;
+}
+
+
+
+
+.adventure-section .adventure-heading{
+    font-size: var(--font-size-xx1);
+}
+
+.adventure-section .adventure-grid{
+        gap: 50px;
+
+    }
+    .adventure-section .adventure-grid .adventure-card{
+           width: calc(100% / 2 - 50px);
+
+    }
+
+    .adventure-section .adventure-card .adventure-details h3{
+    font-size: var(--font-size-1);
+    }
+    .adventure-section .adventure-card .adventure-details p{
+    font-size: var(--font-size-m);
+    }
+ .testimonial-section .testimonial-grid{
+        gap:40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+      
+    }
+    .testimonial-section .testimonial-grid .testimonial{
+         width: calc(100% / 2 - 40px);
+    
+    }
+    .footer .section-content{
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+    }
+}
+/*Responsive Media Query Code for max width 640px */
+
+@media screen and (max-width: 640px){
+    .hero-section , .get-started-section{
+    min-height: 30vh;       
+  width: 100%;
+  padding: 20px;
+}
+    .why-wanderly-details{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+
+}
+    .adventure-section .adventure-heading{
+    font-size: var(--font-size-xx1);
+}
+    .adventure-section .adventure-grid{
+        gap: 50px;
+
+    }
+     .adventure-section .adventure-grid .adventure-card{
+           width: 100% ;
+}
+.adventure-section .adventure-card .adventure-details h3{
+    font-size: var(--font-size-xx1);
+    }
+    .adventure-section .adventure-card .adventure-details p{
+    font-size: var(--font-size-x1);
+    }
+     .testimonial-section .testimonial-grid .testimonial{
+         width: 100%;
+        
+    }
+     .footer .section-content{
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+    }
+   
+}
