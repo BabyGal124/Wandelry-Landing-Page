@@ -499,17 +499,17 @@ header{
     .hero-section .hero-details{
     gap: 15px;
 }
+ .hero-section .hero-details .title , .started-title{
+    margin-top: 10px;
+    font-size: var(--font-size-1);
+}
 .hero-section , .get-started-section{
     min-height: 40vh;      
 }
-.hero-section .hero-details .title{
-     margin-top: 10px;
-    font-size: var(--font-size-1);
-}
-.hero-section .hero-details .subtitle{
+.hero-section .hero-details .subtitle , .started-subtitle{
     font-size: var(--font-size-s);
 }
-.hero-section .hero-details .button-get-started{
+.hero-section .hero-details .button-get-started , .button-get-started{
     padding: 5px 10px;
     font-size: var(--font-size-s);
 }
@@ -631,17 +631,18 @@ grid-column: 1/-1;
     min-height: 40vh;       
 
 }
-    .hero-section .hero-details{
-         margin-top: 10px;
-    gap: 15px;
-}
-    .hero-section .hero-details .title{
+.hero-section .hero-details .title , .started-title{
+    margin-top: 10px;
     font-size: var(--font-size-1);
 }
-.hero-section .hero-details .subtitle{
+    .hero-section .hero-details .title , .started-title{
+    margin-top: 10px;
+    font-size: var(--font-size-1);
+}
+.hero-section .hero-details .subtitle , .started-subtitle{
     font-size: var(--font-size-s);
 }
-.hero-section .hero-details .button-get-started{
+.hero-section .hero-details .button-get-started , .button-get-started{
     padding: 5px 10px;
     font-size: var(--font-size-s);
 }
@@ -678,6 +679,7 @@ grid-column: 1/-1;
    
 
 }
+
 
 
 
