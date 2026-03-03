@@ -496,6 +496,9 @@ header{
     --font-size-xx1:1.8rem;
 
 }
+    .hero-section .hero-details{
+    gap: 15px;
+}
 .hero-section , .get-started-section{
     min-height: 40vh;      
 }
@@ -627,6 +630,9 @@ grid-column: 1/-1;
     min-height: 40vh;       
 
 }
+    .hero-section .hero-details{
+    gap: 15px;
+}
     .hero-section .hero-details .title{
     font-size: var(--font-size-1);
 }
@@ -670,4 +676,5 @@ grid-column: 1/-1;
    
 
 }
+
 
