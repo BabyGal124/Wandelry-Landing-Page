@@ -503,6 +503,7 @@ header{
     min-height: 40vh;      
 }
 .hero-section .hero-details .title{
+     margin-top: 10px;
     font-size: var(--font-size-1);
 }
 .hero-section .hero-details .subtitle{
@@ -631,6 +632,7 @@ grid-column: 1/-1;
 
 }
     .hero-section .hero-details{
+         margin-top: 10px;
     gap: 15px;
 }
     .hero-section .hero-details .title{
@@ -676,5 +678,6 @@ grid-column: 1/-1;
    
 
 }
+
 
 
